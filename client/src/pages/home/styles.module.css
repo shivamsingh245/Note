@@ -1,0 +1,62 @@
+.wrapper {
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.noteList {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+.noteList div {
+    padding: 10px;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+.noteList div p.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px auto 10px auto;
+}
+
+.noteList div hr {
+    border: none;
+    border-top: 1.2px solid black;
+}
+
+.noteList div p.description {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+}
+
+.noteList div .icons {
+    size: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.noteList div span.date {
+    font-size: 14px;
+    margin-left: 158px;
+}
+
+@media (max-width: 768px) {
+    .noteList {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .noteList {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
